@@ -33,7 +33,7 @@ func main() {
 		log.Fatalf("Invalid -size: %d\n", *sizeMB)
 	}
 	targetBytes := int64(*sizeMB) * 1024 * 1024
-	fmt.Println("Starting PDF generation...")
+	fmt.Println("Starting PDF gen...")
 	log.Printf("Target: %d MB → %d bytes, Output: %s\n", *sizeMB, targetBytes, *outFile)
 	rand.Seed(time.Now().UnixNano())
 	pdf := gofpdf.New("P", "mm", "A4", "")
