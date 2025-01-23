@@ -8,10 +8,10 @@ Run the compiled binary specifying the PDF size (in MB) and output file:
   The target size in megabytes. Defaults to `5` if not specified.
 
 - **`-out`**  
-  The output PDF filename or path. Defaults to `big_random.pdf`.
+  The output PDF filename or path. Defaults to `out.pdf`.
 
 ### Example
 
 ```bash
-./pdfgen -size 30 -out /path/to/name.pdf
+./goPdfGen -size 30 -out /path/to/name.pdf
 
